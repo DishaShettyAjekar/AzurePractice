@@ -19,7 +19,7 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
 
-      - uses: azure/webapps-deploy@v3
+      - uses: azure/webapps-deploy@v2
         with:
           app-name: disha-node-demo
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
