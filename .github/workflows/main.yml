@@ -22,4 +22,5 @@ jobs:
       - uses: azure/webapps-deploy@v2
         with:
           app-name: disha-node-demo
+          slot-name: production
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
